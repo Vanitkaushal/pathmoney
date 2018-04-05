@@ -221,14 +221,17 @@ body {
 
 
 /*----------Blog Section------------*/
-
 .center {
     text-align: center;
 }
-
 .flex-box {
     display: inline-flex;
 }
+
+.section-jumper {
+    margin-top: 80px;
+}
+
 
 .blog-head {
     font-family: CircularStd-Medium;
