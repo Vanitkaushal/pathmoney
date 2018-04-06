@@ -308,6 +308,7 @@ a:hover {
     padding-left: 20px;
     padding-top: 25px;
     color: #000;
+    opacity: 0.5;
     letter-spacing: -0.8px;
 }
 
@@ -389,6 +390,7 @@ a:hover {
 
 .side-content {
     padding-top: 50px;
+     padding-right: 2px;
 }
 
 .ad-head {
@@ -689,7 +691,7 @@ Attribution required
 }
 
 .footer-last a {
-    color: #F6F6F6;
+    color: #1A83D4;
     font-family: CircularStd-Book;
     font-size: 15px;
     text-align: center;
