@@ -30,6 +30,34 @@ body {
 .pad-none {
     padding: 0px!important;
 }
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    border-radius: 70%;
+    background-color: #fff;
+    color: #2BC998;
+    border: 1px solid #2BC998;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #2BC998;
+    color: #fff;
+    border: 1px solid #D6D6D6;
+}
 
 .nav-height {
     height: 60px;
@@ -118,7 +146,7 @@ body {
 
 .more-item {
     float: right;
-    padding: 0px 40px;
+    padding: 20px 40px 10px 40px;
     color: #2BC998;
     font-size: 16px;
 }
@@ -229,7 +257,7 @@ body {
 }
 
 .section-jumper {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 
