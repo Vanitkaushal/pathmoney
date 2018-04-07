@@ -666,10 +666,17 @@ Attribution required
     }
 
     .img-popular {
-    width: 110%;
-    height: 80%;
+        height: 80px;
+    width: 80px;
+    margin-top: 10px;
 }
-
+    .popular-ad-box-head {
+    font-size: 20px;
+    }
+    
+    .popular-ad-box-text {
+    font-size: 14px;
+    }
 
 }
 
