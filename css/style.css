@@ -665,6 +665,10 @@ Attribution required
         padding: 29px 22px 24px 16px;
     }
 
+    .img-popular {
+    width: 110%;
+    height: 80%;
+}
 
 
 }
