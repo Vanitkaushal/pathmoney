@@ -244,47 +244,221 @@ body {
 
 
 
+/*---------------Index page-----------*/
+
+#mainpage .row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+} 
+
+.jumbltron {
+    height: 302px;
+    width: 100%;
+    text-align: center;
+}
+
+.jumbltron-head {
+    font-size: 40px;
+    font-family: CircularStd-Medium;
+    padding-top: 67px;
+    padding-bottom: 10px;
+}
+
+.jumbltron-text {
+    font-family: CircularStd-Book;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.jumbltron button {
+    margin-top: 40px;
+    margin-bottom: 69px;
+}
+
+.column-card {
+    height: 371px;
+    background-color: #F5F5F5;
+    padding: 31px 140px 36px 140px;
+    border-bottom: 1.5px solid #D8D8D8;
+} 
+
+.card {
+    width: 333px;
+    height: 140px;
+    background-color: #fff;
+    border: 1px solid #D6D6D6;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-img {
+    height: 36px;
+    width: 68px;
+    text-align: center;
+    margin: 50px 130px 0px 130px;
+}
+
+.card-text a {
+    color: #0D0C0C;
+    font-size: 24px;
+    font-family: CircularStd-Medium;
+}
+
+
+.column-perk {
+    height: 652px;
+    background: #F5F5F5;
+    border-bottom: 1.5px solid #D8D8D8;
+}
+
+.column-perk .flex-box {
+    -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.perk-card1 {
+    height: 492px;
+    width: 485px;
+    margin-left: 184px;
+    
+    margin-bottom: 141px; 
+}
+.perk-card1 .content-box {
+    height: 422px;
+    
+    background: #fff;
+    
+}
+
+.perk-card1 img {
+   
+    width: 485px;
+    overflow: hidden;
+}
+
+.perk-card2 {
+    background-color: #fff;
+    height: 492px;
+    width: 423px;
+    margin: 97px 178px 63px 73px;
+}
+
+
+
+
+
+ 
+/*Media screen for Index page*/
+
+@media screen and (max-width:926px) {
+    
+    .jumbltron {
+    height: 206px;
+    width: 100%;
+    text-align: center;
+}
+
+.jumbltron-head {
+    font-size: 22px;
+    font-family: CircularStd-Medium;
+    padding-top: 40px;
+}
+
+.jumbltron-text {
+    font-family: CircularStd-Book;
+    font-size: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 0px;
+}
+
+.jumbltron button {
+    margin-top: 24px;
+    height: 38px!important;
+    width: 110px!important;
+    font-size: 16px;
+    margin-bottom: 69px;
+}
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------Blog Section------------*/
 
 a:hover {
     color: #1A83D4;
 }
-
 .paragraph-text ul {
     color: #B4B4B4;
     padding: 0px 20px;
 }
-
 .paragraph-text-list {
     color: #6F8691;
     padding: 0px;
 }
-
 .paragraph-text-bold {
     font-weight: 600;
     color: #333;
 }
-
 .paragraph-text-subheading {
     font-size: 21px;
     color: #000;
     font-family: CircularStd-Medium;
 }
-
-
 .center {
     text-align: center;
 }
-
 .flex-box {
     display: inline-flex;
 }
-
 .section-jumper {
     margin-top: 50px;
 }
-
-
 .blog-head {
     font-family: CircularStd-Medium;
     font-size: 30px;
@@ -292,17 +466,14 @@ a:hover {
     margin-top: 75px;
     margin-bottom: 40px;
 }
-
 .blog-author {
     font-family: CircularStd-Book;
     font-size: 20px;
     margin-bottom: 35px;
 }
-
 .author {
     color: #2BC998;
 }
-
 .img-bottom {
     font-family: CircularStd-Book;
     font-size: 18px;
@@ -312,15 +483,12 @@ a:hover {
     opacity: 0.5;
     letter-spacing: -0.8px;
 }
-
 .img-src {
     color: #2BC998;
 }
-
 .grid-box {
     display: grid;
 }
-
 .paragraph-text {
     font-family: LibreBaskerville-Regular;
     font-size: 18px;
@@ -328,7 +496,6 @@ a:hover {
     line-height: 32px;
     color: #6F8691;
 }
-
 .paragraph-head {
     font-family: CircularStd-Medium;
     padding-top: 10px;
@@ -336,25 +503,21 @@ a:hover {
     font-size: 22px;
     color: #232323;
 }
-
 .native-ad {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 .native-head {
     font-family: CircularStd-Book;
     font-size: 30px;
     color: #232323;
     letter-spacing: 0px;
 }
-
 .native-text {
     font-family: CircularStd-Book;
     font-size: 18px;
     padding-bottom: 20px;
 }
-
 .native-btn {
     background: #2BC998;
     font-family: CircularStd-Book;
@@ -364,23 +527,18 @@ a:hover {
     height: 46px;
     border-radius: 30px;
 }
-
 .native-btn a {
     color: #fff;
 }
-
-
 .more-banner {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-
 .more-text {
     font-family: CircularStd-Medium;
     color: #232323;
     font-size: 18px;
 }
-
 .more-link {
     font-family: CircularStd-Book;
     font-size: 18px;
@@ -388,19 +546,16 @@ a:hover {
     color: #1A83D4;
     text-decoration: none;
 }
-
 .side-content {
     padding-top: 50px;
     padding-right: 2px;
 }
-
 .ad-head {
     font-family: CircularStd-Medium;
     font-size: 20px;
     color: #232323;
     padding-left: 10px;
 }
-
 .line {
     min-height: 1.5px;
     background: #D6D6D6;
@@ -408,18 +563,15 @@ a:hover {
     margin-top: 5px;
     margin-bottom: 10px;
 }
-
 .ad-text ul {
     color: #B4B4B4;
     padding-left: 20px;
 }
-
 .ad-list-text {
     color: #1A83D4;
     font-family: CircularStd-Book;
     font-size: 18px;
 }
-
 .footer-author {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -427,24 +579,20 @@ a:hover {
     font-size: 18px;
     color: #0D0C0C;
 }
-
 .author-footer {
     font-family: CircularStd-Book;
     font-size: 18px;
     color: #2BC998;
 }
-
 .date {
     color: #232323;
     opacity: 0.69;
     font-family: CircularStd-Book;
     font-size: 20px;
 }
-
 .social-footer {
     padding-bottom: 70px;
 }
-
 .social-box {
     height: 46px;
     width: 46px;
@@ -902,8 +1050,5 @@ Attribution required
     margin-right: 0px;
     padding-top: 2px;    
 }
-
-
-
 
 }
