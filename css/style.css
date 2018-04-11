@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: CircularStd-Black;
-    src: url('../font/CircularStd-Black.woff');
+    src: url('file:///C:/wamp/www/pathmoney/font/CircularStd-Black.woff');
 }
 
 @font-face {
     font-family: CircularStd-Book;
-    src: url('../font/CircularStd-Book.woff');
+    src: url('file:///C:/wamp/www/pathmoney/font/CircularStd-Book.woff');
 }
 
 @font-face {
     font-family: CircularStd-Medium;
-    src: url('../font/CircularStd-Medium.woff');
+    src: url('file:///C:/wamp/www/pathmoney/font/CircularStd-Medium.woff');
 }
 
 @font-face {
     font-family: LibreBaskerville-Regular;
-    src: url('../font/LibreBaskerville-Regular.ttf');
+    src: url('file:///C:/wamp/www/pathmoney/font/LibreBaskerville-Regular.ttf');
 }
 
 
@@ -309,29 +309,6 @@ body {
     text-align: center;
 }
 
-/*For extra smaller-size  for cards and jumbltron*/
-@media screen and (max-width:385px) {
-    .card {
-    width: 150px;
-    height: 88px;
-    margin: 2px;
-}
-    .jumbltron {
-    height: auto;
-    width: 100%;
-        margin-bottom: 0px;
-    text-align: center;
-}
-    .home-jumbltron-img {
-    background-position-y: -0px;
-    background-position-x: -120px;
-}
-    .card-margin {
-    margin-left: 0%!important;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-}
 
 .card a {
     text-decoration: none;    
@@ -380,7 +357,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     background: #FFF;
     height: 130px;
     padding: 20px;
-    font-family: CursiveStd-Medium;
+    font-family: CircularStd-Medium;
     text-align: left;
 }
 
@@ -423,7 +400,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 .tool-right-list-text {
     padding: 20px 20px 0px 0px;
     font-size: 18px;
-    font-family: CursiveStd-Book;
+    font-family: CircularStd-Book;
 }
 
 .tool-right .read-more {
@@ -472,6 +449,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     font-family: CircularStd-Medium;
     font-size: 30px;
     color: #0D0C0C;
+    padding-top: 20px;
 }
 
 .column-head-text {
@@ -921,31 +899,137 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
         padding-right: 127px;
         margin-left: 11px;
     }
-
-
-
-
-
-
-
-
-
 }
 
 
 
+/*---------Category page----------*/
+
+#category .row {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1400px;
+}
+
+.img-fluid {
+    width: 100%;    
+}
+    
+.category-jumbltron-text {
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.editor-area {
+    background: #F5F5F5;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.editor-head {
+    font-family: CircularStd-Medium;
+    font-size: 26px;
+    border-bottom: 1.5px solid #D6D6D6;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.editor-head-date {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #6F8691;
+    font-family: CircularStd-Book;
+}
+
+.editor-subhead {
+    font-size: 24px;
+    color: #232323;
+    line-height: 140%;
+    font-family: CircularStd-Medium;
+}
+
+.editor-subhead-text {
+    font-size: 20px;
+    line-height: 130%;
+    font-family: CircularStd-Book;
+    color: #6F8691;
+}
+
+.editor-readmore a {
+    font-family: CircularStd-Book;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+    color: #6F8691;
+    text-align: right;
+}
 
 
+.editor-sub-column {
+    padding-top: 40px;
+}
+
+.editor-sub-column-head {
+    font-family: CircularStd-Medium;
+    font-size: 20px;
+    line-height: 140%;
+    color: #232323;
+}
+
+.editor-sub-column-author {
+    font-family: CiircularStd-Book;
+    font-size: 18px;
+    color: #6F8691;
+    padding-top: 11px;
+    line-height: 130%;
+    display: block;
+    text-align: right;
+}
+
+.top-read-text {
+    font-size: 18px;
+    font-family: CircularStd-Book;
+    line-height: 130%;
+    color: #232323;
+    padding:0px;
+}
 
 
+.top-read-author {
+    font-size: 16px;
+    font-family: CircularStd-Book;
+    display: block;
+    color: #6F8691;
+    text-align: right;
+}
 
+.top-read-list {
+    margin-bottom: 40px;
+}
 
+    /*For Mobile Devices*/
 
+@media screen and (max-width:962px) {
+    
+    .category-jumbltron-text {
+    padding-left:10%;
+    padding-right: 10%;
+}
+    .top-read-author {
+    font-size: 12px;
+    padding-top: 12px;
+}
+    
+    .top-read-text {
+    font-size: 14px;
+}
+    
 
-
-
-
-
+}
 
 
 
