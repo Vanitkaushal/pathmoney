@@ -251,8 +251,9 @@ body {
 /*---------------Index page-----------*/
 
 #mainpage .row {
-    margin-left: 0px!important;
-    margin-right: 0px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1400px;
 }
 
 .wrap {
