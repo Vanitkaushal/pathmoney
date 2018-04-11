@@ -1445,11 +1445,12 @@ Attribution required
 }
 
 .sitemap-social-box {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .footer-bottom {
     margin-top: 85px;
+    
     border-top: 1.5px solid rgba(13, 12, 12, 0.6);
 }
 
@@ -1486,6 +1487,17 @@ Attribution required
     margin-right: 106px;
     padding-top: 11px;
 }
+
+.sitemap-social-box .social-box img {
+    padding: 0px;
+      background-color: #2bbf91;
+    border-radius: 30px;
+}
+
+
+
+ /* ----------For mobile devices*-------------*/
+
 
 @media screen and (max-width:600px) {
     .footer-box {
@@ -1543,7 +1555,7 @@ Attribution required
     }
 
     .sitemap-social-box {
-        margin-left: 7px;
+        margin-left: 15px;
     }
 
     .full-term {
@@ -1576,5 +1588,6 @@ Attribution required
         margin-right: 0px;
         padding-top: 2px;
     }
-
+    
+    
 }
