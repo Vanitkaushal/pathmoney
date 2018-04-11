@@ -264,6 +264,8 @@ body {
     height: 302px;
     width: 100%;
     text-align: center;
+        background-position-x: -55px;
+    background-size: 240%;
 }
 
 .home-jumbltron-img {
