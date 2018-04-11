@@ -440,6 +440,11 @@ body {
     color: #606060;
 }
 
+.slider-background {
+    background: #f5f5f5;
+}
+
+
 .loan-advice-list-alignment {
     margin-left: 140px;
     margin-right: 140px;
