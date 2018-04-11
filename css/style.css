@@ -266,6 +266,10 @@ body {
     text-align: center;
 }
 
+.home-jumbltron-img {
+    background-image: url("../images/imgpsh.png");
+}
+
 .jumbltron-head {
     font-size: 40px;
     font-family: CircularStd-Medium;
@@ -593,7 +597,6 @@ box-shadow: 1px 1px 4px 1px rgba(214,214,214,1);
     font-family: CircularStd-Medium;
     padding-top: 10px;
     text-align: left;
-    width: 260px;
     color: #232323;
 }
 
@@ -681,12 +684,6 @@ box-shadow: 1px 1px 4px 1px rgba(214,214,214,1);
     .card-margin {
         margin-left: 5%!important;
     }
-    
-    
-    
-    
-    
-    
     
   
 .column-round-img {
@@ -805,7 +802,6 @@ box-shadow: 1px 1px 4px 1px rgba(214,214,214,1);
     margin-left: 9%;
     margin-right: 0;
     margin-top: 20px;
-    width: 260px;
     padding-bottom: 40px;
 }
 
