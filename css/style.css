@@ -940,6 +940,17 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 
     }
 
+    
+    
+    .form-radius {
+    width: 140px!important;
+}
+
+.btn-form {
+    width: 85px!important;
+}
+    
+    
 
     .img-card-head {
         font-size: 22px;
