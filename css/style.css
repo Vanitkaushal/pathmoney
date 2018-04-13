@@ -240,10 +240,14 @@ body {
     border: 1.5px solid #2BC998;
 }
 
-.language-select:hover,
-.language-select:focus {
-     background-color: #f5f5f5;   
+.language-select:hover {
+     background-color: #fff;   
     border: 1.5px solid #2BC998;
+}
+
+.language-select:focus {
+    background-color: #fff; 
+    box-shadow: none;
 }
 
 .page-language {
@@ -252,6 +256,7 @@ body {
     top: 1px!important;
     padding: 0px 10px;
     border-radius: 10px;
+    box-shadow: none;
     border: 1.5px solid #2BC998;
     width: 65px;
 }
@@ -271,7 +276,7 @@ body {
 
 .arrow-dropdown {
     position: absolute;
-    right: 42px;
+    right: 8px;
     top: 0px;
 }
 
@@ -283,21 +288,37 @@ body {
 #lang {
     width:27px;
     height:17px;
-    margin-left: 13px;
+    margin-left: -15px;
     background-image: url(../svg/aus.svg);
     background-size: cover;
     visibility: visible;
 }
 
 .nav-right-area {
-    
+        width: 250px;
 }
 
+.search-icon {
+    padding-top: 5px;
+    padding-right: 50px;
+}
 
+.page-language-web {
+    min-width: 0px!important;
+    left: 0px!important;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 1.5px solid #2BC998;
+    width: 65px;;
+}
 
+.page-language-web img {
+    width: 27px;
+}
 
-
-
+.page-language-web .dropdown-item {
+    padding: .25rem 1.1rem; 
+}
 
 
 
@@ -654,7 +675,13 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     font-family: CircularStd-Book;
     font-size: 16px;
     color: #fff;
+    transition: background 0.3s, color 0.3s;
     background: #2BC998;
+}
+
+.btn-form:hover {
+     background: #1cd59b;  
+    cursor: pointer;
 }
 
 .contact-right {
@@ -1106,30 +1133,32 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 
 .editor-sub-column-head {
     font-family: CircularStd-Medium;
-    font-size: 15px;
+    font-size: 18px;
+    overflow: hidden;
     padding-top: 10px!important;
     line-height: 24px;
-    height: 68px;
+    height: 60px;
     margin-bottom: 13px;
     color: #232323;
 }
 
 .editor-sub-column-author {
     font-family: CircularStd-Book;
-    font-size: 14px;
+    font-size: 16px;
     color: #6F8691;
     padding: 0px;
     line-height: 20px;
+    padding-bottom: 40px;
     display: block;
     text-align: right;
 }
 
-.top-read-text {
+.top-read-text a {
     font-size: 15px;
     font-family: CircularStd-Book;
     line-height: 24px;
     height: 50px;
-    color: #232323;
+    color: #232323!important;
     padding:0px;
 }
 
@@ -1138,6 +1167,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     font-size: 12px;
     font-family: CircularStd-Book;
     display: block;
+    text-decoration: none!important;
     color: #6F8691;
     text-align: right;
 }
@@ -1146,12 +1176,16 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     margin-bottom: 10px;
     -webkit-box-shadow: 0px 0px 1px 0px rgba(214,214,214,1);
     -moz-box-shadow: 0px 0px 1px 0px rgba(214,214,214,1);
-    box-shadow: 0px 0px 1px 0px rgba(214,214,214,1)
+    box-shadow: 0px 0px 1px 0px rgba(214,214,214,1);
     padding-top: 10px;
     background: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
+
 
     /*For Mobile Devices*/
 
@@ -1310,12 +1344,13 @@ a:hover {
     color: #fff;
     width: 200px;
     height: 46px;
+    transition: background 0.3s, color 0.3s;
     border-radius: 30px;
 }
 
-.native-btn:hover ,
-native-btn:focus {
-     background: #2BC998;   
+.native-btn:hover  {
+     background: #1cd59b;  
+    cursor: pointer;
 }
 
 
@@ -1405,8 +1440,9 @@ native-btn:focus {
     border-radius: 50%;
 }
 
-.social-box img {
-    padding: 14px 0px 0px 12px;
+.social-box img {  
+    background-color: #2bc998;    
+    border-radius: 50%;
 }
 
 @media screen and (max-width:962px) {
@@ -1695,7 +1731,7 @@ Attribution required
 .sitemap-text-left a {
     margin-top: 10px;
     font-family: CircularStd-Book;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
     color: #F6F6F6;
     text-decoration: none;
