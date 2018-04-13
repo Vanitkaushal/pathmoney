@@ -219,16 +219,102 @@ body {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 10%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
+.page-language-section {
+    position: absolute;
+    top: 2%;
+    right: 25%;
+}
+
+.language-select {
+    width: 65px;
+    height: 33px;
+    background: #fff;
+    position: relative;
+    border-radius: 20px;
+    border: 1.5px solid #2BC998;
+}
+
+.language-select:hover,
+.language-select:focus {
+     background-color: #f5f5f5;   
+    border: 1.5px solid #2BC998;
+}
+
+.page-language {
+    min-width: 0px!important;
+    left: 0px!important;
+    top: 1px!important;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1.5px solid #2BC998;
+    width: 65px;
+}
+.page-language a {
+    font-size: 0px!important;
+}
+
+.page-language img {
+    width: 27px;
+}
+
+
+.language-select img {
+    width: 27px;
+    position: fixed;
+}
+
+.arrow-dropdown {
+    position: absolute;
+    right: 42px;
+    top: 0px;
+}
+
+.arrow-dropdown img {
+    position: relative;
+    width: 11px;
+}
+
+#lang {
+    width:27px;
+    height:17px;
+    margin-left: 13px;
+    background-image: url(../svg/aus.svg);
+    background-size: cover;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .overlay a {
     padding: 8px;
+    font-family: CircularStd-Medium;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.2s;
@@ -236,13 +322,13 @@ body {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: #2bc998;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: -20px;
-    right: 20px;
+        position: absolute;
+    top: -13px;
+    right: 12px;
     font-size: 45px;
 }
 
@@ -467,7 +553,8 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 .loan-advice-list-alignment {
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 40px
+    margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 .loan-advice-list-box {
@@ -523,8 +610,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     background-color: #fff;
     width: 680px;
     padding-top: 45px;
-    margin-right: 80px;
-    margin-left: -20px;
+    margin-left: 0px;
     border: 1px solid #D6D6D6;
     border-radius: 10px;
 }
@@ -615,7 +701,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     margin-left: 209px;
     margin-right: 209px;
     margin-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .img-card-title {
@@ -913,7 +999,16 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 
 .credit-jumbltron-img {
     background-image: url(../images/category.png);
-    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    win-width:1204px;
+    
+    width: 100%;
+    height: auto;
+    
+    position: relative;
+    top: 0;
+    left: 0;
 }
 .auto-jumbltron-img {
     background-image: url(../images/auto.png);
@@ -931,6 +1026,12 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     background-image: url(../images/personaloan.png);
     background-size: auto;
 }
+
+
+
+
+
+
 
 
 
@@ -1006,7 +1107,8 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     font-size: 15px;
     padding-top: 10px!important;
     line-height: 24px;
-    height: 50px;
+    height: 68px;
+    margin-bottom: 13px;
     color: #232323;
 }
 
@@ -1046,7 +1148,7 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
     padding-top: 10px;
     background: #fff;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
     /*For Mobile Devices*/
@@ -1209,6 +1311,10 @@ a:hover {
     border-radius: 30px;
 }
 
+.native-btn:hover ,
+native-btn:focus {
+     background: #2BC998;   
+}
 
 
 .native-btn a {

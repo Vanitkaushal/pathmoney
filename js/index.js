@@ -137,9 +137,19 @@ $(document).ready(function () {
 
 
 
+/*-------------Navigation language dropdown-----------*/
 
+function englishflag() {
+    document.getElementById("lang").style.backgroundImage = "url('svg/aus.svg')";
+}
 
+function japaneseflag() {
+   document.getElementById("lang").style.backgroundImage = "url('svg/jp.svg')";
+}
+function spainflag() {
+    document.getElementById("lang").style.backgroundImage = "url('svg/es.svg')";
+}
 
-
+/*-------------Navigation language dropdown end-----------*/
 
 
