@@ -150,6 +150,18 @@ function spainflag() {
     document.getElementById("lang").style.backgroundImage = "url('svg/es.svg')";
 }
 
+
+function englishflagsm() {
+    document.getElementById("lang-sm").style.backgroundImage = "url('svg/aus.svg')";
+}
+
+function japaneseflagsm() {
+   document.getElementById("lang-sm").style.backgroundImage = "url('svg/jp.svg')";
+}
+function spainflagsm() {
+    document.getElementById("lang-sm").style.backgroundImage = "url('svg/es.svg')";
+}
+
 /*-------------Navigation language dropdown end-----------*/
 
 

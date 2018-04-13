@@ -294,6 +294,15 @@ body {
     visibility: visible;
 }
 
+#lang-sm {
+    width:27px;
+    height:17px;
+    margin-left: -15px;
+    background-image: url(../svg/aus.svg);
+    background-size: cover;
+    visibility: visible;
+}
+
 .nav-right-area {
         width: 250px;
 }
