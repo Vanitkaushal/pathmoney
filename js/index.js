@@ -150,6 +150,7 @@ function spainflag() {
     document.getElementById("lang").style.backgroundImage = "url('svg/es.svg')";
 }
 
+//for mobile
 
 function englishflagsm() {
     document.getElementById("lang-sm").style.backgroundImage = "url('svg/aus.svg')";
@@ -163,5 +164,37 @@ function spainflagsm() {
 }
 
 /*-------------Navigation language dropdown end-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -117,7 +117,7 @@ body {
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.34);
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.34);
-    left: -222px;
+    left: -242px;
 }
 
 .dropdown-menu .flex-box {
@@ -150,6 +150,57 @@ body {
     color: #2BC998;
     font-size: 16px;
 }
+
+@keyframes mymove {
+    from {width: 0px;}
+    to {width: 150px;}
+}
+.nav-search-area {
+    max-width: 150px;
+    width: 0px;
+}
+
+.nav-search-toggle {
+    animation: mymove 2s;
+}
+
+.search-box {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    left: 0px;
+    top: 40px;
+    width: 200px;
+}
+
+.search-box .form-control {
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+    
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;    
+}
+
+.search-box .form-control::placeholder {
+    color: #2BC998;
+    font-family: CircularStd-Book;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Lower Width*/
 
@@ -234,19 +285,21 @@ body {
 .language-select {
     width: 65px;
     height: 33px;
+    margin-top: 4px;
     background: #fff;
     position: relative;
     border-radius: 20px;
-    border: 1.5px solid #2BC998;
+    border: 1px solid #fff;
 }
 
 .language-select:hover {
      background-color: #fff;   
-    border: 1.5px solid #2BC998;
+    border: 1px solid #2BC998;
 }
 
 .language-select:focus {
     background-color: #fff; 
+    border: 1px solid #2BC998;
     box-shadow: none;
 }
 
@@ -257,11 +310,11 @@ body {
     padding: 0px 10px;
     border-radius: 10px;
     box-shadow: none;
-    border: 1.5px solid #2BC998;
-    width: 65px;
+    width: 90px;
 }
 .page-language a {
-    font-size: 0px!important;
+    font-size: 12px!important;
+    font-family: CircularStd-Book;
 }
 
 .page-language img {
@@ -317,8 +370,11 @@ body {
     left: 0px!important;
     box-shadow: none;
     border-radius: 10px;
-    border: 1.5px solid #2BC998;
-    width: 65px;;
+}
+
+.page-language-web a {
+    font-family: CircularStd-Book;
+    font-size: 15px;
 }
 
 .page-language-web img {
@@ -328,11 +384,6 @@ body {
 .page-language-web .dropdown-item {
     padding: .25rem 1.1rem; 
 }
-
-
-
-
-
 
 
 
@@ -517,8 +568,13 @@ box-shadow: 0px 0px 0.5px 0.5px rgba(96,96,96,0.39);
 
 .tool-right-list-text {
     padding: 20px 20px 0px 0px;
+}
+
+.tool-right-list-text a,
+.tool-right-list-text a:hover {
     font-size: 18px;
     font-family: CircularStd-Book;
+    color: #232323;
 }
 
 .tool-right .read-more {
@@ -1655,14 +1711,12 @@ Attribution required
 
 }
 
-.popular-ad-box {
-    padding: 0px 10px;
-    background-color: #fff;
-}
 
 .popular-ad-box {
     border: 1px solid #D6D6D6;
     height: 180px;
+    background-color: #fff;
+    border-radius: 10px;
     padding: 39px 32px 34px 26px;
 }
 
