@@ -23,23 +23,24 @@
 
    <a id="back2Top" title="Back to top" href="#"><img class="scroll-top-button" src="svg/angle-up.svg"></a>
 
-    <section id="navbar">
+   <section id="navbar">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light pad-none nav-height">
             <span class="logo-main">
-<a href="index.html"><img src="svg/path%20money%20logo.svg"></a>
+            <a href="index.html"><img src="svg/path%20money%20logo.svg"></a>
+
 </span>
             <button class="nav-btn" onclick="openNav()">&#9776;</button>
 
 
 
             <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul id="navbar-header-list" class="navbar-nav mr-auto  search-notactive ">
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Credit Cards
 </a>
-                        <div class="dropdown-menu menu-box" style="" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu menu-box" aria-labelledby="navbarDropdown">
 
                             <div class="flex-box">
                                 <div class="grid-box">
@@ -74,7 +75,7 @@ Credit Cards
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Auto Loans
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -108,7 +109,7 @@ Auto Loans
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Personal loans
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -142,7 +143,7 @@ Personal loans
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Banking
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -176,7 +177,7 @@ Banking
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Mortages
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -210,7 +211,7 @@ Mortages
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Insurance
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -244,7 +245,7 @@ Insurance
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Money 
 </a>
-                        <div class="dropdown-menu" style="left: -222px;" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="flex-box">
                                 <div class="grid-box">
                                     <div class="box-head">Popular</div>
@@ -274,19 +275,50 @@ Money
 
                         </div>
                     </li>
+                    
+                    
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="nav-search" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/search.png">
+                        </a>
+                         <div class="dropdown-menu search-box" id="search-box">
+                                <input class="form-control" type="text" placeholder="Search">
+                            </div>   
+                    </li>
+                    
+                    
+                    
+
+                    <li class="nav-item dropdown">
+                        <div class="navbar-lang-area">
+                           
+                                <button class="btn  language-select" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="flex-box">
+                        <div id="lang"> </div>
+                    <div class="arrow-dropdown"><img src="svg/arrow-down.svg"></div>
+    
+                    </div>
+                            </button>
+                                <div id="page-language" class="dropdown-menu page-language-web" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" onclick="englishflag()">English</a>
+                                    <a class="dropdown-item" href="#" onclick="japaneseflag()">Japanese</a>
+                                    <a class="dropdown-item" href="#" onclick="spainflag()">Spanish</a>
+                                </div>
+                            
+                        </div>
+                    </li>
+
+
+
                 </ul>
 
 
 
 
-                <!-- Search area-->
-                <form class="form-inline my-2 my-lg-0">
-                    <span class="search-icon">
-<img src="images/search.png">
-</span>
-                    <button class="round-search" type="button">Join or log in
-</button>
-                </form>
+
+
+
+
             </div>
         </nav>
         <!--Data For Mobile Version-->
@@ -297,12 +329,41 @@ Money
                 <span class="logo-main-mob"><img src="svg/path%20money%20logo.svg"</span>
             </div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+
+            <div class="page-language-section">
+
+                <div class="dropdown">
+                    <button class="btn  language-select" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="flex-box">
+                        
+                    <div class="arrow-dropdown"><img src="svg/arrow-down.svg"></div>
+                        <div id="lang-sm"> </div>
+                    </div>
+                    </button>
+
+                    <div id="page-language" class="dropdown-menu page-language" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="englishflagsm()">English</a>
+                        <a class="dropdown-item" href="#" onclick="japaneseflagsm()">Japanese</a>
+                        <a class="dropdown-item" href="#" onclick="spainflagsm()">Spanish</a>
+                    </div>
+                </div>
+
+
+
             </div>
+
+            <div class="overlay-content">
+                <a class="center"><input class="form-control" type="text" placeholder="Search"></a>
+                <a href="creditcard.html">Credit Cards </a>
+                <a href="personalloan.html">Personal Loans </a>
+                <a href="mortgageloans.html">Mortages</a>
+                <a href="mortgageloans.html">Money </a>
+                <a href="autoloan.html">Auto Loans </a>
+                <a href="banking.html">Banking </a>
+                <a href="#">Insurance</a>
+            </div>
+                
+            
         </div>
 
 
@@ -498,53 +559,7 @@ Money
             </div>
         </div>
         
-         <div class="img-card-area">
-            <div class="row center">
-                <div class="img-card-head col-sm-12">
-                    Best Insurance Advices
-                </div>
-                <div class="img-card-head-text col-sm-12">
-                    Here are some ways we keep you and your info secure.
-                </div>
-
-                <div class="row img-card-area col-sm-12">
-                    <div class="col-sm">
-                        <img src="images/img-card.png">
-                        <div class="img-card-title"> Which Insurance Agents provide best policies? </div>
-                        <div class="flex-box">
-                            <div id="img-card-author" class=" img-card-author">by Jim Moore</div>
-                            <div id="img-card-date" class="img-card-date">
-                                Today
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/img-card-1.png">
-                        <div class="img-card-title"> Which Insurance Agents provide best policies? </div>
-                        <div class="flex-box">
-                            <div id="img-card-author" class=" img-card-author">by Jim Moore</div>
-                            <div id="img-card-date" class="img-card-date">
-                                Today
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/img-card-2.png">
-                        <div class="img-card-title"> Which Insurance Agents provide best policies? </div>
-                        <div class="flex-box">
-                            <div id="img-card-author" class=" img-card-author">by Jim Moore</div>
-                            <div id="img-card-date" class="img-card-date">
-                                Today
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
+          <div class="row">
             <div class="col-sm-12">
                    <div class="row contact">
             <div class="contact-area">
@@ -588,6 +603,97 @@ Money
             </div>
 
         </div>
+            </div>
+        </div>
+        
+        <div class="img-card-area">
+            <div class="row">
+                <div class="img-card-head center col-sm-12">
+                    Best Insurance Advices
+                </div>
+                <div class="img-card-head-text center col-sm-12">
+                    Here are some ways we keep you and your info secure.
+                </div>
+
+                <div class="row img-card-area col-sm-12">
+                    <div class="col-sm img-card-margin">
+                       <div class="row">
+                           <div class="col-12">
+                               <img class="img-fluid" src="images/img-card.png">
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12">
+                               <span class="img-card-title">Which Insurance Agents provide best policies?</span>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12 pad-none">
+                               <div class="row">
+                                   <div class="col-9">
+                                       <span id="img-card-author" class=" img-card-author">by Jim Moore</span>
+                                   </div>
+                                   <div class="col-3">
+                                       <span id="img-card-date" class="img-card-date">Today</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                      <div class="col-sm img-card-margin">
+                       <div class="row">
+                           <div class="col-12">
+                               <img class="img-fluid" src="images/img-card-1.png">
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12">
+                               <span class="img-card-title">Which Insurance Agents provide best policies?</span>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12 pad-none">
+                               <div class="row">
+                                   <div class="col-9">
+                                       <span id="img-card-author" class=" img-card-author">by Jim Moore</span>
+                                   </div>
+                                   <div class="col-3">
+                                       <span id="img-card-date" class="img-card-date">Today</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                      <div class="col-sm img-card-margin">
+                       <div class="row">
+                           <div class="col-12">
+                               <img class="img-fluid" src="images/img-card-2.png">
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12">
+                               <span class="img-card-title">Which Insurance Agents provide best policies?</span>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-12 pad-none">
+                               <div class="row">
+                                   <div class="col-9">
+                                       <span id="img-card-author" class=" img-card-author">by Jim Moore</span>
+                                   </div>
+                                   <div class="col-3">
+                                       <span id="img-card-date" class="img-card-date">Today</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    
+                   
+
+
+                </div>
             </div>
         </div>
         
@@ -659,8 +765,6 @@ Money
                 </div>
             </div>
         </div>
-        
-        <div class="line"></div>
         
         
     </section>
