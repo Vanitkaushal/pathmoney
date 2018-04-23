@@ -179,7 +179,7 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   var winScroll = document.documentElement.scrollTop - 900 ;
-  var height = document.documentElement.scrollHeight - 1750;
+  var height = document.documentElement.scrollHeight - 1950;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }

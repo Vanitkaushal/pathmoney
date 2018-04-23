@@ -2014,6 +2014,8 @@ Attribution required
 .progress-bar {
   height: 10px;
   background: #2BC998;
+    max-width: 100%;
+    min-width: 0px;
   width: 0%;
 }
 
