@@ -77,7 +77,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 
 // Add smooth scrolling to all links
-$("a").on('click', function (event) {
+$(".ad-list-text a").on('click', function (event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -88,7 +88,7 @@ $("a").on('click', function (event) {
         var hash = this.hash;
 
         // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        // The optional number (1600) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 1600, function () {
@@ -109,7 +109,7 @@ $(window).scroll(function () {
     if (height > 100) {
         $('#back2Top').fadeIn();
         $(window).scroll(function(){
-  var threshold = 50; // number of pixels before bottom of page that you want to start fading
+  var threshold = 200; // number of pixels before bottom of page that you want to start fading
   var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
 	if( op <= 0 ){
 		$("#back2Top").hide();
@@ -164,36 +164,6 @@ function spainflagsm() {
 }
 
 /*-------------Navigation language dropdown end-----------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

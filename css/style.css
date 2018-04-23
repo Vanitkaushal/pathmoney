@@ -67,7 +67,8 @@ body {
 
 .logo-main {
     height: 23px;
-    width: 125px;
+    width: 45vw;
+    max-width: 125px;
     margin-left: 55px;
 }
 
@@ -170,7 +171,6 @@ body {
     border: none;
     left: -80px;
     top: 40px;
-    width: 200px;
 }
 
 .search-box .form-control {
@@ -464,12 +464,12 @@ body {
 
 .column-card {
     background-color: #F5F5F5;
-    padding: 31px 140px 36px 140px;
+    padding: 31px 10% 36px 10%;
     border-bottom: 1.5px solid #D8D8D8;
 }
 
 .card {
-    width: 333px;
+    width: 24vw;
     height: 140px;
     background-color: #fff;
     border: 1px solid #D6D6D6;
