@@ -77,7 +77,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 
 // Add smooth scrolling to all links
-$(".ad-list-text a").on('click', function (event) {
+$("#blog a").on('click', function (event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -183,6 +183,49 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
