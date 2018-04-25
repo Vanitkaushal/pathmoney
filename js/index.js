@@ -178,54 +178,10 @@ function spainflagsm() {
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  var winScroll = document.documentElement.scrollTop - 500 ;
-  var height = document.documentElement.scrollHeight - 1950;
-  var scrolled = (winScroll / height) * 100;
+  var winScroll = document.documentElement.scrollTop - 800 ;
+  var height = document.getElementById("blog").scrollHeight - 1200 ;
+  var scrolled = 0 + (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
