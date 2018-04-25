@@ -193,24 +193,20 @@ function myFunction() {
 
     var currentScroll = $(this).scrollTop();
 
-    /*
-      If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
-    */
     if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
-      /*
-        If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
-      */
-      if (currentScroll > previousScroll){
+        if (currentScroll < 1100){
         window.setTimeout(hideNav, 10);
-      /*
-        Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
-      */
+          $(".stick").removeClass(" is-visible").addClass("is-hidden");
+      }
+        
+      else if (currentScroll > previousScroll){
+        window.setTimeout(hideNav, 10);
+         $(".stick").removeClass(" is-hidden").addClass("is-visible"); 
+
       } else {
         window.setTimeout(showNav, 10);
+          $(".stick").removeClass(" is-hidden").addClass("is-visible");
       }
-      /* 
-        Set the previous scroll value equal to the current scroll.
-      */
       previousScroll = currentScroll;
     }
 
