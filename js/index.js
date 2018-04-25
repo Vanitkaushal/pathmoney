@@ -217,10 +217,10 @@ function myFunction() {
   });
 
   function hideNav() {
-    $(".stick").removeClass(" is-visible").addClass("is-hidden");
+    $(".float-rec").removeClass(" is-visible").addClass("is-hidden");
   }
   function showNav() {
-    $(".stick").removeClass(" is-hidden").addClass("is-visible");
+    $(".float-rec").removeClass(" is-hidden").addClass("is-visible");
   }
 
 
